@@ -2,8 +2,21 @@ import 'dart:async';
 
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:flutter/material.dart';
+import 'package:guestchannel/pages/index.dart';
 
-void main() => runApp(MyApp());
+
+void main() => runApp(App());
+
+
+class App extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: IndexPage(),
+    );
+  }
+}
 
 class MyApp extends StatefulWidget {
   @override
