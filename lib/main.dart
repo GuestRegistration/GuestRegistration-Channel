@@ -2,10 +2,13 @@ import 'dart:async';
 
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:flutter/material.dart';
+import 'package:guestchannel/locator.dart';
 import 'package:guestchannel/pages/index.dart';
 
-
-void main() => runApp(App());
+void main(){
+  setupLocator();
+  runApp(App());
+}
 
 
 class App extends StatelessWidget {

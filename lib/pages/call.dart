@@ -17,7 +17,7 @@ class CallPage extends StatefulWidget {
 class _CallPageState extends State<CallPage> {
   static final _users = <int>[];
   final _infoStrings = <String>[];
-  bool muted = false;
+  bool muted = true; //enable speaker
 
   @override
   void dispose() {
